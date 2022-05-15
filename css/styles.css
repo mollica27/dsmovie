@@ -201,4 +201,25 @@ a, a:hover  {
     height: 40px;
     border: 1px solid var(--color-primary);
     border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(33%) saturate(4033%) hue-rotate(228deg) brightness(105%) contrast(84%);
+
+}
+
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid var(--text-light-gray);
+}
+
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
+}
+
+.dsmovie-flip-horizontal{
+    transform: rotate(180deg);
 }
